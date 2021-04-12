@@ -7,4 +7,4 @@ FROM gitpod/workspace-full
 # More information: https://www.gitpod.io/docs/config-docker/
 USER gitpod
 
-RUN pip3 install -U platformio && brew install uncrustify
+RUN pip3 install -U platformio #&& brew install uncrustify
