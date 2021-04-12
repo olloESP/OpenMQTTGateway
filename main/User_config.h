@@ -29,7 +29,7 @@
 #define user_config_h
 /*-------------------VERSION----------------------*/
 #ifndef OMG_VERSION
-#  define OMG_VERSION "version_tag"
+#  define OMG_VERSION "v0.9.6_tom"
 #endif
 
 /*-------------CONFIGURE WIFIMANAGER-------------(only ESP8266 & SONOFF RFBridge)*/
@@ -236,10 +236,10 @@ int lowpowermode = DEFAULT_LOW_POWER_MODE;
 #  define will_Retain true
 #endif
 #ifndef will_Message
-#  define will_Message "offline"
+#  define will_Message "OFF"
 #endif
 #ifndef Gateway_AnnouncementMsg
-#  define Gateway_AnnouncementMsg "online"
+#  define Gateway_AnnouncementMsg "ON"
 #endif
 
 #ifndef jsonPublishing

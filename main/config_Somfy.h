@@ -31,10 +31,10 @@ extern void setupSomfy();
 extern void MQTTtoSomfy(char* topicOri, JsonObject& RFdata);
 /*----------------------------USER PARAMETERS-----------------------------*/
 #define EEPROM_ADDRESS_START 0
-#define SOMFY_REMOTE_NUM     1
+#define SOMFY_REMOTE_NUM     4
 
 // Do not change the order of the remotes, because based on the index the rolling codes are stored
-const uint32_t somfyRemotes[SOMFY_REMOTE_NUM] = {0x5184c8};
+const uint32_t somfyRemotes[SOMFY_REMOTE_NUM] = {0x21345a, 0x2134a5, 0x213a45, 0x21a345};
 
 /*-------------DEFINE YOUR MQTT PARAMETERS BELOW----------------*/
 #define subjectMQTTtoSomfy "/commands/MQTTtoSomfy"
