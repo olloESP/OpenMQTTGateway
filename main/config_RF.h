@@ -112,9 +112,9 @@ float receiveMhz = CC1101_FREQUENCY;
 /*-------------------PIN DEFINITIONS----------------------*/
 #ifndef RF_RECEIVER_GPIO
 #  ifdef ESP8266
-#    define RF_RECEIVER_GPIO 4 // D3 on nodemcu // put 4 with rf bridge direct mod
+#    define RF_RECEIVER_GPIO 0 // D3 on nodemcu // put 4 with rf bridge direct mod
 #  elif ESP32
-#    define RF_RECEIVER_GPIO 22 // D27 on DOIT ESP32
+#    define RF_RECEIVER_GPIO 27 // D27 on DOIT ESP32
 #  elif __AVR_ATmega2560__
 #    define RF_RECEIVER_GPIO 1 //1 = D3 on mega
 #  else
@@ -124,9 +124,9 @@ float receiveMhz = CC1101_FREQUENCY;
 
 #ifndef RF_EMITTER_GPIO
 #  ifdef ESP8266
-#    define RF_EMITTER_GPIO 5 // RX on nodemcu if it doesn't work with 3, try with 4 (D2) // put 5 with rf bridge direct mod
+#    define RF_EMITTER_GPIO 3 // RX on nodemcu if it doesn't work with 3, try with 4 (D2) // put 5 with rf bridge direct mod
 #  elif ESP32
-#    define RF_EMITTER_GPIO 21 // D12 on DOIT ESP32
+#    define RF_EMITTER_GPIO 12 // D12 on DOIT ESP32
 #  elif __AVR_ATmega2560__
 #    define RF_EMITTER_GPIO 4
 #  else
